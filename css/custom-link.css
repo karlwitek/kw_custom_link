@@ -1,0 +1,70 @@
+div.kwcl-link-div {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  padding: 1vw;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.0);
+  transition: transform 300ms linear 630ms, 
+              background-color 300ms linear 630ms;    
+}
+
+div.kwcl-textarea-div {
+  opacity: 0;
+  color: #fff;
+  font-size: 0;
+  transition: font-size 300ms cubic-bezier(0.32, 0, 0.67, 0) 10ms,
+              opacity 300ms linear 320ms;
+}
+
+div.kwcl-link-div.move-back {
+  transition: transform 300ms linear 10ms, 
+              background-color 300ms linear 10ms;
+}
+
+div.kwcl-textarea-div.close-textbox {
+  transition: font-size 300ms cubic-bezier(0.32, 0, 0.67, 0) 630ms,
+              opacity 300ms linear 320ms;
+}
+
+div.show-text {
+  font-size: 18px;
+  opacity: 1;
+}
+
+h2.kwcl-title {
+  color: #ffffffda;
+  font-size: 26px;
+}
+
+div.move-down {
+  transform: translate(-2vw, 2vw);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+a.kwcl-anchor-link {
+  text-decoration: none;
+}
+
+@media screen and (width <= 768px) {
+  div.kwcl-textarea-div {
+    padding: 2vw;
+    opacity: 1;
+    font-size: 18px;
+  }
+
+  div.kwcl-link-div {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  h2.kwcl-title {
+    padding: 2vw;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 24px;
+  }
+}
+

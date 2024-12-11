@@ -1,0 +1,24 @@
+div.kwcl-custom-block{
+  height: auto;
+  width: 100%;
+  padding: 3px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+div.kwcl-custom-block input {
+  margin-bottom: 3px;
+  width: 47%;
+  font-size: 14px;
+}
+
+div.kwcl-custom-block input:last-of-type {
+  float: right;
+}
+
+div.kwcl-custom-block textarea {
+  display: block;
+  height: 160px;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+}
