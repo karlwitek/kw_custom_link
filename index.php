@@ -73,15 +73,15 @@ class KWCustomLink {
     $inputStr = $attributes['urlOrSlug'];
     $pattern = "/^https:\/\//";
     if (preg_match($pattern, $inputStr)) {
-      return "__blank";
+      return "_blank";
     }
-    return "__self";
+    return "_self";
   }
 
   function pageHTML($attributes) {
     
     ob_start(); ?>
-      <a href=<?php echo $this->createHref($attributes); ?> target=<?php echo $this->getTargetAttrValue($attributes)?> class="kwcl-anchor-link">
+      <a href=<?php echo $this->createHref($attributes); ?> target=<?php echo $this->getTargetAttrValue($attributes); ?> class="kwcl-anchor-link">
         <div class="kwcl-link-div">
           <h2 class="kwcl-title"><?php echo esc_html($attributes['title']) ?></h2>
           <div class="kwcl-textarea-div">
